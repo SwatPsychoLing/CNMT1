@@ -39,23 +39,23 @@ PennController.Template(
         .settings.log()
         .start()
     ,
-    newImage("one", variable.Image1)
+    newImage("1", variable.Image1)
         .settings.size(200,200)
     ,
-    newImage("two", variable.Image2)
+    newImage("2", variable.Image2)
         .settings.size(200,200)
     ,
-    newImage("three", variable.Image3)
+    newImage("3", variable.Image3)
         .settings.size(200,200)
     ,
-    newImage("four", variable.Image4)
+    newImage("4", variable.Image4)
         .settings.size(200,200)
     ,
     newCanvas("images", 1200, 200)
-        .settings.add(0   , 0 , getImage("one") )
-        .settings.add(200 , 0 , getImage("two") )
-        .settings.add(800 , 0 , getImage("three") )
-        .settings.add(1000, 0 , getImage("four") )
+        .settings.add(0   , 0 , getImage("1") )
+        .settings.add(200 , 0 , getImage("2") )
+        .settings.add(800 , 0 , getImage("3") )
+        .settings.add(1000, 0 , getImage("4") )
         .print()
     ,
     newTimer(1200)
@@ -82,9 +82,9 @@ PennController.Template(
         .wait()
   )
   .log( "ID"     , getVar("ID")    )
-  //.log( "Item"   , variable.Item   )
-  //.log( "Ending" , variable.Ending )
-  //.log( "Group"  , variable.Group  ) TODO: can probably group by layout for easier analysis
+  .log( "Target"   , variable.TargetLocation  )
+  .log( "TrialType") , variable.TrialType )
+
 )
 
 
