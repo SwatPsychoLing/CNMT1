@@ -79,8 +79,7 @@ PennController.Template(
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
-  .log( "TrialType") , variable.TrialType )
-
+  .log( "TrialType" , variable.TrialType )
 )
 
 
