@@ -76,7 +76,6 @@ PennController.Template(
     ,
     getAudio("description")
        .wait("first")
-    ,
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
