@@ -66,7 +66,7 @@ PennController.Template(
         .play()
     ,
     newSelector()
-        .settings.add( getImage("two") , getImage("one") , getImage("three") , getImage("four"))
+        .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         //.shuffle()
         .settings.log()
         .wait()
@@ -77,9 +77,6 @@ PennController.Template(
     getAudio("description")
        .wait("first")
     ,
-    newTimer(500)
-        .start()
-        .wait()
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
