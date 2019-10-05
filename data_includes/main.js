@@ -9,6 +9,10 @@ PennController( "welcome" ,
     newHtml("consent", "consent.html")
         .print()
     ,
+    newButton("Continue")
+        .print()
+        .wait()
+    ,
     newHtml("instructions", "instructions.htm")
         .print()
     ,
