@@ -83,7 +83,7 @@ PennController.Template(
     ,
     getMouseTracker("mouse")
         .stop()
-    ,
+    //,
     //getAudio("description")
     //   .wait("first")
   )
