@@ -84,9 +84,8 @@ PennController.Template(
     getMouseTracker("mouse")
         .stop()
     ,
-    var showProgressBar = true;
-    getAudio("description")
-       .wait("first")
+    //getAudio("description")
+    //   .wait("first")
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
