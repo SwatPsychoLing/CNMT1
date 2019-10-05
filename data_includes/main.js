@@ -1,9 +1,12 @@
 PennController.ResetPrefix(null)
-
+PennController.DebugOff()
 PennController.Sequence( "welcome" , "preload", randomize("experiment") , "send" , "final" )
 
 PennController( "welcome" ,
     defaultText
+        .print()
+    ,
+    newHtml("consent", "consent.html")
         .print()
     ,
     newHtml("instructions", "instructions.htm")
@@ -67,7 +70,6 @@ PennController.Template(
     ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
-        //.shuffle()
         .settings.log()
         .wait()
     ,
