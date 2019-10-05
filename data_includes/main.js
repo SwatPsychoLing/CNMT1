@@ -93,17 +93,21 @@ PennController.Template(
 )
 
 PennController( "questions" ,
-    newDropDown("mouse", "Did you use a mouse or a trackpad (as on a laptop) during this experiment?")
+    newDropDown("mouse", "Did you use a mouse or a trackpad (as on a laptop) during this experiment? &nbsp;")
         .settings.add( "mouse" , "trackpad", "other") 
         .print()
         .settings.log()
     ,
+    newText("Did you use a mouse or a trackpad (as on a laptop) during this experiment? &nbsp;")
+        .settings.after( getDropDown("mouse") )
+        .print()
+    ,
     newDropDown("age", "")
-        .settings.add("-- Select your age. --", "18-24", "25-34", "35-44" ,"45-54", "55-64", "65-74", "75 or older")
-        .select( "-- Select your age. --")
+        .settings.add("-- Select --", "18-24", "25-34", "35-44" ,"45-54", "55-64", "65-74", "75 or older")
+        .select( "-- Select --")
         .settings.log()
     ,
-    newText("How old are you?  ")
+    newText("How old are you? &nbsp;")
         .settings.after( getDropDown("age") )
         .print()
     ,
