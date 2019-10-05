@@ -1,5 +1,5 @@
 PennController.ResetPrefix(null)
-PennController.DebugOff()
+//PennController.DebugOff()
 PennController.Sequence( "consent" , "intro" , "preload" , randomize("experiment") , "send" , "final" )
 var showProgressBar = false;
 
