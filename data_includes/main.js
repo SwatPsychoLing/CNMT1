@@ -61,11 +61,12 @@ PennController.Template(
     newImage("4", variable.Image4)
         .settings.size(200,200)
     ,
-    newCanvas("images", 1200, 200)
+    newCanvas("images", 1400, 200)
+        .settings.center()
         .settings.add(0   , 0 , getImage("1") )
         .settings.add(200 , 0 , getImage("2") )
-        .settings.add(800 , 0 , getImage("3") )
-        .settings.add(1000, 0 , getImage("4") )
+        .settings.add(1000 , 0 , getImage("3") )
+        .settings.add(1200, 0 , getImage("4") )
         .print()
     ,
     newTimer(1200)
