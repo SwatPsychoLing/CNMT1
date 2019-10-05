@@ -106,6 +106,10 @@ PennController( "questions" ,
     newText("How old are you?  ")
         .settings.after( getDropDown("age") )
         .print()
+    ,
+    newButton("Finish")
+        .print()
+        .wait()
 )
 
 PennController.SendResults( "send" )
