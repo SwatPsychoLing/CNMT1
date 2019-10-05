@@ -1,8 +1,8 @@
 PennController.ResetPrefix(null)
 PennController.DebugOff()
-PennController.Sequence( "welcome" , "preload", randomize("experiment") , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "preload" , randomize("experiment") , "send" , "final" )
 
-PennController( "welcome" ,
+PennController( "consent" ,
     defaultText
         .print()
     ,
@@ -12,7 +12,9 @@ PennController( "welcome" ,
     newButton("Continue")
         .print()
         .wait()
-    ,
+)
+
+PennController( "intro" ,
     newHtml("instructions", "instructions.htm")
         .print()
     ,
