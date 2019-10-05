@@ -6,9 +6,6 @@ PennController( "welcome" ,
     defaultText
         .print()
     ,
-    newHtml("consent", "consent.html")
-        .print()
-    ,
     newHtml("instructions", "instructions.htm")
         .print()
     ,
