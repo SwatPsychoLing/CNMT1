@@ -6,10 +6,13 @@ PennController( "welcome" ,
     defaultText
         .print()
     ,
-    newHtml("instructions", "instructions.htm")
-            .print()
+    newHtml("consent", "consent.html")
+        .print()
     ,
-    newText("<p>Please enter your ID and then click the button below to start the experiment.</p>")
+    newHtml("instructions", "instructions.htm")
+        .print()
+    ,
+    newText("<p>Please enter your Prolific ID and then click the button below to start the experiment.</p>")
     ,
     newTextInput("ID")
         .print()
