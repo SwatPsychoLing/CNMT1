@@ -125,7 +125,7 @@ PennController( "questions" ,
     newTextInput("nativeLang", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(200, 50)
+        .settings.size(200, 20)
         .print()
     ,
     newText("At what age did you begin learning English? If you're a native speaker, enter 0.")
@@ -134,7 +134,7 @@ PennController( "questions" ,
     newTextInput("ageEng", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(200, 50)
+        .settings.size(200, 20)
         .print()
     ,
     newText("What do you think this study is about?")
@@ -143,7 +143,7 @@ PennController( "questions" ,
     newTextInput("studyPurpose", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 100)
+        .settings.size(400, 60)
         .print()
     ,
     newText("Did you have any technical issues throughout the experiment? If so, please explain.")
@@ -152,7 +152,7 @@ PennController( "questions" ,
     newTextInput("issues", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 100)
+        .settings.size(400, 60)
         .print()
     ,
     newText("Do you have any other comments?")
@@ -161,7 +161,7 @@ PennController( "questions" ,
     newTextInput("comments", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 100)
+        .settings.size(400, 60)
         .print()
     ,
     newButton("Finish")
