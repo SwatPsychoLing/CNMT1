@@ -159,20 +159,24 @@ PennController.Template(
         .settings.add(1200, 0 , getImage("4") )
         .print()
     ,
+    newAudio("description", variable.AudioFile)
+    ,
+    newMouseTracker("mouse")
+        .settings.log()
+        .settings.callback( getAudio("horse").test.playing().success(getText("warning").print()) )
+        .start()
+    ,
     newTimer(1200)
         .start()
         .wait()
     ,
-    newAudio("description", variable.AudioFile)
-        .play()
-    ,
+
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
+        .settings.callback(getMouseTracker("mouse").stop()
         .wait()
     ,
-    getMouseTracker("mouse")
-        .stop()
     //,
     //getAudio("description")
     //   .wait("first")
