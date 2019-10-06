@@ -172,7 +172,7 @@ PennController.Template(
     ,
     newMouseTracker("mouse")
         .settings.log()
-        .settings.callback( getTimer("earlyStart").test.running().success(getText("startWarning").print().wait()) )
+        .settings.callback( getTimer("earlyStart").test.running().success(getTooltip("startWarning").print().wait()) )
         //.settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
         .start()
     ,
