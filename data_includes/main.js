@@ -93,7 +93,7 @@ PennController.Template(
 )
 
 PennController( "questions" ,
-    newDropDown("mouse", "Did you use a mouse or a trackpad (as on a laptop) during this experiment? &nbsp;")
+    newDropDown("mouse", "Select")
         .settings.add( "mouse" , "trackpad", "other") 
         .print()
         .settings.log()
@@ -102,13 +102,51 @@ PennController( "questions" ,
         .settings.after( getDropDown("mouse") )
         .print()
     ,
-    newDropDown("age", "")
-        .settings.add("-- Select --", "18-24", "25-34", "35-44" ,"45-54", "55-64", "65-74", "75 or older")
-        .select( "-- Select --")
+    newDropDown("age", "Select")
+        .settings.add("18-24", "25-34", "35-44" ,"45-54", "55-64", "65-74", "75 or older")
         .settings.log()
     ,
     newText("How old are you? &nbsp;")
         .settings.after( getDropDown("age") )
+        .print()
+    ,
+    newDropDown("nativeEng", "")
+        .settings.add("-- Select --", "yes", "no")
+        .select( "-- Select --")
+        .settings.log()
+    ,
+    newText("Are you a native English speaker? &nbsp;")
+        .settings.after( getDropDown("nativeEng") )
+        .print()
+    ,
+    newTextInput("nativeLang", "If not in English, what is your native language?")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 200)
+        .print()
+    ,
+    newTextInput("ageEng", "At what age did you begin learning English? If you're a native speaker, enter 0.")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(400, 200)
+        .print()
+    ,
+    newTextInput("studyPurpose", "What do you think this study is about?")
+        .settings.log()
+        .settings.lines(4)
+        .settings.size(400, 200)
+        .print()
+    ,
+    newTextInput("issues", "Did you have any technical issues throughout the experiment? If so, please explain.")
+        .settings.log()
+        .settings.lines(4)
+        .settings.size(400, 200)
+        .print()
+    ,
+    newTextInput("comments", "Do you have any other comments?")
+        .settings.log()
+        .settings.lines(4)
+        .settings.size(400, 200)
         .print()
     ,
     newButton("Finish")
