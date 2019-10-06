@@ -135,10 +135,6 @@ PennController.Template(
         .wait()
         .remove()
     ,
-    newMouseTracker("mouse")
-        .settings.log()
-        .start()
-    ,
     newImage("1", variable.Image1)
         .settings.size(200,200)
     ,
