@@ -130,11 +130,6 @@ PennController( "final" ,
 
 PennController.Template( 
   variable => PennController( "experiment" ,
-    newButton("Go")
-        .print( "center at 50vw" , "center at 90vh" )
-        .wait()
-        .remove()
-    ,
     newImage("1", variable.Image1)
         .settings.size(200,200)
     ,
@@ -159,14 +154,19 @@ PennController.Template(
     ,
     newText("warning", "This is the warning message.")
     ,
+    newTimer(2000) // 2000 ms to preview images
+        .start()
+        .wait()
+    ,
+    newButton("Go")
+        .print( "center at 50vw" , "center at 90vh" )
+        .wait()
+        .remove()
+    ,
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
         .start()
-    ,
-    newTimer(1200)
-        .start()
-        .wait()
     ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
@@ -178,7 +178,8 @@ PennController.Template(
         .play()
         .wait()
     ,
-    getText("warning").remove()
+    getText("warning")
+        .remove()
     //,
     //getAudio("description")
     //   .wait("first")
