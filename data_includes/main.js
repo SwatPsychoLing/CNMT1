@@ -34,6 +34,12 @@ PennController( "intro" ,
     ,
     newVar("earlyCounter", 0)
         .settings.global()
+    ,
+    newVar("lateCounter", 0)
+        .settings.global()
+    ,
+    newVar("slowClickCounter", 0)
+        .settings.global()
 )
 .log( "ID" , getVar("ID") )
 
@@ -193,11 +199,13 @@ PennController.Template(
         .stop()
     ,
     getVar("isEarly")
-        .test.is(1)
-        .success(getTooltip("earlyWarning").print().wait())
+        .test.is(1).success(getTooltip("earlyWarning").print().wait())
+        .test.is(1).success(getVar("earlyCounter").set(getVar("earlyCounter")+1))
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
   .log( "TrialType" , variable.TrialType )
   .log( "earlyCounter" , getVar("earlyCounter") )
+  .log( "lateCounter" , getVar("lateCounter") )
+  .log( "slowClickCounter" , getVar("slowClickCounter") )
 )
