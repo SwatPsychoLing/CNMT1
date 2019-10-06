@@ -38,9 +38,6 @@ PennController( "intro" ,
 PennController.CheckPreloaded("experiment").label("preload")
 
 PennController( "questions" ,
-    getButton("Go")
-        .remove()
-    ,
     newDropDown("mouse", "Select")
         .settings.add( "mouse" , "trackpad", "other") 
         .print()
