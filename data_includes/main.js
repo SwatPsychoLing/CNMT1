@@ -183,6 +183,7 @@ PennController.Template(
         .print()
         .wait()
         .remove()
+    ,
     getText("warning")
         .remove()
     //,
