@@ -186,15 +186,15 @@ PennController.Template(
         .settings.log()
         .wait()
     ,
+    getAudio("description")
+        .stop()
+    ,
     getMouseTracker("mouse")
         .stop()
     ,
     getVar("isEarly")
         .test.is(1)
         .success(getTooltip("earlyWarning").print().wait())
-    //,
-    //getAudio("description")
-    //   .wait("first")
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
