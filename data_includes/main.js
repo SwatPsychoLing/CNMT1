@@ -161,9 +161,11 @@ PennController.Template(
     ,
     newAudio("description", variable.AudioFile)
     ,
+    newText("warning", "This is the warning message.")
+    ,
     newMouseTracker("mouse")
         .settings.log()
-        .settings.callback( getAudio("horse").test.playing().success(getText("warning").print()) )
+        .settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
         .start()
     ,
     newTimer(1200)
