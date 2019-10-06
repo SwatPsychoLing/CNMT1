@@ -31,6 +31,9 @@ PennController( "intro" ,
     newVar("ID")
         .settings.global()
         .set( getTextInput("ID") )
+    ,
+    newVar("earlyCounter", 0)
+        .settings.global()
 )
 .log( "ID" , getVar("ID") )
 
@@ -152,7 +155,8 @@ PennController.Template(
     ,
     newAudio("description", variable.AudioFile)
     ,
-    newText("warning", "This is the warning message.")
+    newTooltip("startWarning", "STARTED TOO EARLY. You moved your mouse from the Go button before it was possible to guess the correct option. Please don't move your mouse until you're about to click.")
+        .settings.position("top center")
     ,
     newTimer(2000) // 2000 ms to preview images
         .start()
@@ -163,9 +167,13 @@ PennController.Template(
         .wait()
         .remove()
     ,
+    newTimer("earlyStart", variable.NPTime)
+        .start()
+    ,
     newMouseTracker("mouse")
         .settings.log()
-        .settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
+        .settings.callback( getTimer("earlyStart").test.running().success(getText("startWarning").print().wait()) )
+        //.settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
         .start()
     ,
     getAudio("description")
@@ -178,14 +186,6 @@ PennController.Template(
     ,
     getMouseTracker("mouse")
         .stop()
-    ,
-    newButton("OK")
-        .print()
-        .wait()
-        .remove()
-    ,
-    getText("warning")
-        .remove()
     //,
     //getAudio("description")
     //   .wait("first")
@@ -193,4 +193,5 @@ PennController.Template(
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
   .log( "TrialType" , variable.TrialType )
+  .log( "earlyCounter" , getVar("earlyCounter") )
 )
