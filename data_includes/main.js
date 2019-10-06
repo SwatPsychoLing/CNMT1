@@ -1,6 +1,6 @@
 PennController.ResetPrefix(null)
 //PennController.DebugOff()
-PennController.Sequence( "consent" , "intro" , "preload" , randomize("experiment") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "preload" , randomize("experiment") , "sep", "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
@@ -92,6 +92,8 @@ PennController.Template(
   .log( "TrialType" , variable.TrialType )
 )
 
+["sep", "Separator", {transfer: 1000, normalMessage: "You have completed the main experiment. Now, please answer the following questions."}]
+
 PennController( "questions" ,
     newDropDown("mouse", "Select")
         .settings.add( "mouse" , "trackpad", "other") 
@@ -110,9 +112,8 @@ PennController( "questions" ,
         .settings.after( getDropDown("age") )
         .print()
     ,
-    newDropDown("nativeEng", "")
-        .settings.add("-- Select --", "yes", "no")
-        .select( "-- Select --")
+    newDropDown("nativeEng", "Select")
+        .settings.add("yes", "no")
         .settings.log()
     ,
     newText("Are you a native English speaker? &nbsp;")
@@ -164,13 +165,15 @@ PennController( "questions" ,
         .settings.size(400, 60)
         .print()
     ,
+    newText("<p><p>")
+        .print()
+    , 
     newButton("Finish")
         .print()
         .wait()
 )
 
 PennController.SendResults( "send" )
-
 
 PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
