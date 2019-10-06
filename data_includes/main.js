@@ -174,7 +174,7 @@ PennController.Template(
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
-        .settings.callback(getMouseTracker("mouse").stop()
+        .settings.callback(getMouseTracker("mouse").stop() )
         .wait()
     ,
     //,
