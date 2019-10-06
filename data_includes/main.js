@@ -119,34 +119,49 @@ PennController( "questions" ,
         .settings.after( getDropDown("nativeEng") )
         .print()
     ,
-    newTextInput("nativeLang", "If not in English, what is your native language?")
+    newText("If not in English, what is your native language?")
+        .print()
+    ,
+    newTextInput("nativeLang", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(400, 200)
+        .settings.size(200, 50)
         .print()
     ,
-    newTextInput("ageEng", "At what age did you begin learning English? If you're a native speaker, enter 0.")
+    newText("At what age did you begin learning English? If you're a native speaker, enter 0.")
+        .print()
+    ,        
+    newTextInput("ageEng", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(400, 200)
+        .settings.size(200, 50)
         .print()
     ,
-    newTextInput("studyPurpose", "What do you think this study is about?")
+    newText("What do you think this study is about?")
+        .print()
+    , 
+    newTextInput("studyPurpose", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 200)
+        .settings.size(400, 100)
         .print()
     ,
-    newTextInput("issues", "Did you have any technical issues throughout the experiment? If so, please explain.")
+    newText("Did you have any technical issues throughout the experiment? If so, please explain.")
+        .print()
+    , 
+    newTextInput("issues", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 200)
+        .settings.size(400, 100)
         .print()
     ,
-    newTextInput("comments", "Do you have any other comments?")
+    newText("Do you have any other comments?")
+        .print()
+    , 
+    newTextInput("comments", "")
         .settings.log()
         .settings.lines(4)
-        .settings.size(400, 200)
+        .settings.size(400, 100)
         .print()
     ,
     newButton("Finish")
