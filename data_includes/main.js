@@ -200,7 +200,8 @@ PennController.Template(
     ,
     getVar("isEarly")
         .test.is(1).success(getTooltip("earlyWarning").print().wait())
-        .test.is(1).success(getVar("earlyCounter").set(getVar("earlyCounter")+1))
+        .test.is(1).success(getVar("earlyCounter").set(+=1))
+ //       .test.is(1).success(getVar("earlyCounter").set(getVar("earlyCounter")+1))
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
