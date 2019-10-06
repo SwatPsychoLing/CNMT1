@@ -168,17 +168,21 @@ PennController.Template(
         .settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
         .start()
     ,
+    getAudio("description")
+        .play()
+    ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
-    ,
-    getAudio("description")
-        .play()
         .wait()
     ,
     getMouseTracker("mouse")
         .stop()
     ,
+    newButton("OK")
+        .print()
+        .wait()
+        .remove()
     getText("warning")
         .remove()
     //,
