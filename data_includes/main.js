@@ -164,7 +164,7 @@ PennController.Template(
     ,
     newVar("slowClick", 0)
     ,
-    newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to make your selection. Please try to click quicker next time!")
+    newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to click on your selection. Please try to click quicker next time!")
         .settings.position("top center")
     ,
     newTimer(1500) // 1500 ms to preview images
@@ -181,6 +181,7 @@ PennController.Template(
     ,
     newTimer("timeLimit", 5000)
         .start()
+    ,
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
