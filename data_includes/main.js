@@ -215,6 +215,7 @@ PennController.Template(
         .test.is(1).success(getTooltip("slowClickWarning").print().wait())
   )
   .log( "ID"     , getVar("ID")    )
+  .log( "Group"  , variable.Group  )
   .log( "Target"   , variable.TargetLocation  )
   .log( "TrialType" , variable.TrialType )
   .log( "EarlyStartMessage" , getVar("isEarly") )
