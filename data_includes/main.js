@@ -186,6 +186,7 @@ PennController.Template(
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
         .settings.callback( getAudio("description").test.hasPlayed().success(getVar("isLate").set(1)) )
+        .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
         .start()
     ,
     getAudio("description")
@@ -195,7 +196,6 @@ PennController.Template(
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
         .wait()
-        .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
     ,
     getAudio("description")
         .stop()
