@@ -31,15 +31,6 @@ PennController( "intro" ,
     newVar("ID")
         .settings.global()
         .set( getTextInput("ID") )
-    ,
-    newVar("earlyCounter", 0)
-        .settings.global()
-    ,
-    newVar("lateCounter", 0)
-        .settings.global()
-    ,
-    newVar("slowClickCounter", 0)
-        .settings.global()
 )
 .log( "ID" , getVar("ID") )
 
@@ -166,7 +157,17 @@ PennController.Template(
     newTooltip("earlyWarning", "STARTED TOO EARLY. You moved your mouse from the Go button before it was possible to guess the correct option. Please don't move your mouse until you're about to click.")
         .settings.position("top center")
     ,
-    newTimer(2000) // 2000 ms to preview images
+    newVar("isLate", 0)
+    ,
+    newTooltip("lateWarning", "STARTED TOO LATE. You waited a bit too long to start moving your mouse. Try to start moving your mouse before the audio is completely over.")
+        .settings.position("top center")
+    ,
+    newVar("slowClick", 0)
+    ,
+    newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to make your selection. Please try to click quicker next time!")
+        .settings.position("top center")
+    ,
+    newTimer(1500) // 1500 ms to preview images
         .start()
         .wait()
     ,
@@ -178,10 +179,12 @@ PennController.Template(
     newTimer("earlyStart", variable.NPTime)
         .start()
     ,
+    newTimer("timeLimit", 5000)
+        .start()
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
-        //.settings.callback( getAudio("description").test.playing().success(getText("warning").print()) )
+        .settings.callback( getAudio("description").test.hasPlayed().success(getVar("isLate").set(1)) )
         .start()
     ,
     getAudio("description")
@@ -191,6 +194,7 @@ PennController.Template(
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
         .wait()
+        .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
     ,
     getAudio("description")
         .stop()
@@ -200,13 +204,17 @@ PennController.Template(
     ,
     getVar("isEarly")
         .test.is(1).success(getTooltip("earlyWarning").print().wait())
-        .test.is(1).success(getVar("earlyCounter").set(+=1))
- //       .test.is(1).success(getVar("earlyCounter").set(getVar("earlyCounter")+1))
+    ,
+    getVar("isLate")
+        .test.is(1).success(getTooltip("lateWarning").print().wait())
+    ,
+    getVar("slowClick")
+        .test.is(1).success(getTooltip("slowClickWarning").print().wait())
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Target"   , variable.TargetLocation  )
   .log( "TrialType" , variable.TrialType )
-  .log( "earlyCounter" , getVar("earlyCounter") )
-  .log( "lateCounter" , getVar("lateCounter") )
-  .log( "slowClickCounter" , getVar("slowClickCounter") )
+  .log( "EarlyStartMessage" , getVar("isEarly") )
+  .log( "LateStartMessage" , getVar("isLate") )
+  .log( "TooSlowClickMessage" , getVar("slowClick") )
 )
