@@ -177,10 +177,8 @@ PennController.Template(
         .remove()
     ,
     newTimer("earlyStart", variable.NPTime)
-        .start()
     ,
     newTimer("timeLimit", 5000)
-        .start()
     ,
     newMouseTracker("mouse")
         .settings.log()
@@ -191,6 +189,10 @@ PennController.Template(
     ,
     getAudio("description")
         .play()
+    ,
+    getTimer("earlyStart").start()
+    ,
+    getTimer("timeLimit").start()
     ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
