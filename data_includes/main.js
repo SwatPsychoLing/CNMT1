@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 //PennController.DebugOff()
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexitems.zip");
-PennController.Sequence( "consent" , "intro" , "preload" , "start_prac" , "practice", rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "preload" , "start_prac" , "practice" , "end_prac" , rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
