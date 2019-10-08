@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 //PennController.DebugOff()
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexitems.zip");
-PennController.Sequence( "consent" , "intro" , "practice", rshuffle("critical", "critical competitor", "contrast filler", "filler") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "practice", rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
@@ -127,8 +127,7 @@ PennController( "final" ,
         .wait()
 )
 
-PennController.Template( 
-//  variable => PennController( "experiment" ,  
+PennController.Template(  
   variable => PennController(
     newImage("1", variable.Image1)
         .settings.size(200,200)
