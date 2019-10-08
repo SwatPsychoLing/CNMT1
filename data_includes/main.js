@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 //PennController.DebugOff()
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexitems.zip");
-PennController.Sequence( "consent" , "intro" , randomize("experiment") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "practice", rshuffle("critical", "critical competitor", "contrast filler", "filler") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
@@ -215,8 +215,8 @@ PennController.Template(
   )
   .log( "ID"     , getVar("ID")    )
   .log( "Group"  , variable.Group  )
+  .log( "Label" , variable.Label )
   .log( "Target"   , variable.TargetLocation  )
-  .log( "TrialType" , variable.TrialType )
   .log( "EarlyStartMessage" , getVar("isEarly") )
   .log( "LateStartMessage" , getVar("isLate") )
   .log( "TooSlowClickMessage" , getVar("slowClick") )
