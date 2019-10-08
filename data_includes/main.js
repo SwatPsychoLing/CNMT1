@@ -11,7 +11,7 @@ PennController( "consent" ,
     newHtml("consent", "consent.html")
         .print()
     ,
-    newButton("<p>")
+    newButton("<p>I consent and am ready to continue.")
         .print()
         .wait()
 )
@@ -38,28 +38,10 @@ PennController( "intro" ,
 PennController.CheckPreloaded("experiment").label("preload")
 
 PennController( "start_prac" ,
-    newText("In each trial, you will be shown four images. After a couple seconds have passed, a 'Go' button will appear near the bottom of your screen. ")
-        .settings.center()
-        .print()
-    ,
-    newText("When you click the 'Go' button, audio instructions will begin to play. Listen to the instructions, but <b>do not move your mouse</b> until you're ready to click.")
-        .settings.center()
-        .print()
-    ,
-    newText("While you should not move your mouse right at the beginning of the audio, it's also important to <b>begin moving your mouse as soon as you think you know which object to click.</b> Try not to wait until the audio is fully done.")
-        .settings.center()
-        .print()
-    ,
-    newText("We understand that it can be difficult to time your mouse movements exactly right - just try your best! You will get feedback if you are moving your mouse too early or too late.")
-        .settings.center()
-        .print()
-    ,
-    newText("We'll start with a few practice trials. Click on Start when you're ready to begin.")
-        .settings.center()
+    newHtml("practice_intro", "practice.htm")
         .print()
     ,
     newButton("Start")
-        .settings.center()
         .print()
         .wait()
 )
