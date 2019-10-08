@@ -128,7 +128,8 @@ PennController( "final" ,
 )
 
 PennController.Template( 
-  variable => PennController( "experiment" ,
+//  variable => PennController( "experiment" ,  
+  variable => PennController(
     newImage("1", variable.Image1)
         .settings.size(200,200)
     ,
