@@ -41,7 +41,16 @@ PennController( "start_prac" ,
     newHtml("practice_intro", "practice.htm")
         .print()
     ,
-    newButton("Start")
+    newButton("<p>Start")
+        .print()
+        .wait()
+)
+
+PennController( "end_prac" ,
+    newHtml("practice_end", "endpractice.htm")
+        .print()
+    ,
+    newButton("<p>Start")
         .print()
         .wait()
 )
