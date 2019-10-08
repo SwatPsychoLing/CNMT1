@@ -1,7 +1,7 @@
 PennController.ResetPrefix(null)
 //PennController.DebugOff()
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexitems.zip");
-PennController.Sequence( "consent" , "intro" , "preload" , randomize("experiment") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , randomize("experiment") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
@@ -34,8 +34,6 @@ PennController( "intro" ,
         .set( getTextInput("ID") )
 )
 .log( "ID" , getVar("ID") )
-
-PennController.CheckPreloaded("experiment").label("preload")
 
 PennController( "questions" ,
     newDropDown("mouse", "Select")
