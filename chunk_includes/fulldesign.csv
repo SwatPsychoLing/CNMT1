@@ -1,4 +1,4 @@
-Image1,Image2,Image3,Image4,AudioFile,TargetLocation,TrialType,ClickTime,AdjTime,NounTime,NPTime,Group
+Image1,Image2,Image3,Image4,AudioFile,TargetLocation,Label,ClickTime,AdjTime,NounTime,NPTime,Group
 longscissors.png,shortscissors.png,orca.png,brain.png,longscissors.m4a,1,critical,693,1634,2256,1634,A
 longpeapod.png,shortpeapod.png,shortbroom.png,cap.png,shortpeapod.m4a,2,critical competitor,540,1384,1996,1384,A
 wateringcan.png,dice.png,fatbowlingpin.png,skinnybowlingpin.png,fatbowlingpin.m4a,3,critical,424,1361,2043,1361,A
@@ -139,16 +139,16 @@ cooler.png,ducttape.png,bat.png,beret.png,cooler.m4a,1,filler,415,,1488,1488,A
 wolf.png,blender.png,earbuds.png,crane.png,blender.m4a,2,filler,401,,1445,1445,A
 beet.png,indexcards.png,crib.png,paint.png,crib.m4a,3,filler,567,,1584,1584,A
 crepe.png,scale.png,cheetah.png,pajamas.png,pajamas.m4a,4,filler,483,,1460,1460,A
-croissant.png,underwear.png,traintracks.png,passport.png,croissant.m4a,1,filler,549,,1486,1486,A
-protractor.png,floss.png,nachos.png,snorkel.png,floss.m4a,2,filler,476,,1359,1359,A
-tractor.png,walker.png,compass.png,pawprint.png,compass.m4a,3,filler,568,,1584,1584,A
-tulip.png,raccoon.png,gps.png,church.png,church.m4a,4,filler,928,,1950,1950,A
-starfish.png,car.png,sponge.png,coffeebean.png,starfish.m4a,1,filler,528,,1446,1446,A
-sheep.png,chalkboard.png,puddle.png,cane.png,chalkboard.m4a,2,filler,586,,1556,1556,A
-tweezers.png,canteloupe.png,snowcone.png,frisbee.png,snowcone.m4a,3,filler,617,,1464,1464,A
-tweezers.png,canteloupe.png,frisbee.png,pokerchips.png,pokerchips.m4a,4,filler,540,,1498,1498,A
-asparagus.png,gasoline.png,crown.png,honey.png,asparagus.m4a,1,filler,439,,1431,1431,A
-milkshake.png,tent.png,belt.png,stethoscope.png,tent.m4a,2,filler,335,,1427,1427,A
+croissant.png,underwear.png,traintracks.png,passport.png,croissant.m4a,1,practice,549,,1486,1486,A
+protractor.png,floss.png,nachos.png,snorkel.png,floss.m4a,2,practice,476,,1359,1359,A
+tractor.png,walker.png,compass.png,pawprint.png,compass.m4a,3,practice,568,,1584,1584,A
+tulip.png,raccoon.png,gps.png,church.png,church.m4a,4,practice,928,,1950,1950,A
+starfish.png,car.png,sponge.png,coffeebean.png,starfish.m4a,1,practice,528,,1446,1446,A
+sheep.png,chalkboard.png,puddle.png,cane.png,chalkboard.m4a,2,practice,586,,1556,1556,A
+tweezers.png,canteloupe.png,snowcone.png,frisbee.png,snowcone.m4a,3,practice,617,,1464,1464,A
+tweezers.png,canteloupe.png,frisbee.png,pokerchips.png,pokerchips.m4a,4,practice,540,,1498,1498,A
+asparagus.png,gasoline.png,crown.png,honey.png,asparagus.m4a,1,practice,439,,1431,1431,A
+milkshake.png,tent.png,belt.png,stethoscope.png,tent.m4a,2,practice,335,,1427,1427,A
 longscissors.png,shortscissors.png,orca.png,longnotepad.png,longscissors.m4a,1,critical competitor,693,1634,2256,1634,B
 longpeapod.png,shortpeapod.png,anchor.png,cap.png,shortpeapod.m4a,2,critical,540,1384,1996,1384,B
 wateringcan.png,fatpig.png,fatbowlingpin.png,skinnybowlingpin.png,fatbowlingpin.m4a,3,critical competitor,424,1361,2043,1361,B
@@ -289,13 +289,13 @@ cooler.png,ducttape.png,bat.png,beret.png,cooler.m4a,1,filler,415,,1488,1488,B
 wolf.png,blender.png,earbuds.png,crane.png,blender.m4a,2,filler,401,,1445,1445,B
 beet.png,indexcards.png,crib.png,paint.png,crib.m4a,3,filler,567,,1584,1584,B
 crepe.png,scale.png,cheetah.png,pajamas.png,pajamas.m4a,4,filler,483,,1460,1460,B
-croissant.png,underwear.png,traintracks.png,passport.png,croissant.m4a,1,filler,549,,1486,1486,B
-protractor.png,floss.png,nachos.png,snorkel.png,floss.m4a,2,filler,476,,1359,1359,B
-tractor.png,walker.png,compass.png,pawprint.png,compass.m4a,3,filler,568,,1584,1584,B
-tulip.png,raccoon.png,gps.png,church.png,church.m4a,4,filler,928,,1950,1950,B
-starfish.png,car.png,sponge.png,coffeebean.png,starfish.m4a,1,filler,528,,1446,1446,B
-sheep.png,chalkboard.png,puddle.png,cane.png,chalkboard.m4a,2,filler,586,,1556,1556,B
-tweezers.png,canteloupe.png,snowcone.png,frisbee.png,snowcone.m4a,3,filler,617,,1464,1464,B
-tweezers.png,canteloupe.png,frisbee.png,pokerchips.png,pokerchips.m4a,4,filler,540,,1498,1498,B
-asparagus.png,gasoline.png,crown.png,honey.png,asparagus.m4a,1,filler,439,,1431,1431,B
-milkshake.png,tent.png,belt.png,stethoscope.png,tent.m4a,2,filler,335,,1427,1427,B
+croissant.png,underwear.png,traintracks.png,passport.png,croissant.m4a,1,practice,549,,1486,1486,B
+protractor.png,floss.png,nachos.png,snorkel.png,floss.m4a,2,practice,476,,1359,1359,B
+tractor.png,walker.png,compass.png,pawprint.png,compass.m4a,3,practice,568,,1584,1584,B
+tulip.png,raccoon.png,gps.png,church.png,church.m4a,4,practice,928,,1950,1950,B
+starfish.png,car.png,sponge.png,coffeebean.png,starfish.m4a,1,practice,528,,1446,1446,B
+sheep.png,chalkboard.png,puddle.png,cane.png,chalkboard.m4a,2,practice,586,,1556,1556,B
+tweezers.png,canteloupe.png,snowcone.png,frisbee.png,snowcone.m4a,3,practice,617,,1464,1464,B
+tweezers.png,canteloupe.png,frisbee.png,pokerchips.png,pokerchips.m4a,4,practice,540,,1498,1498,B
+asparagus.png,gasoline.png,crown.png,honey.png,asparagus.m4a,1,practice,439,,1431,1431,B
+milkshake.png,tent.png,belt.png,stethoscope.png,tent.m4a,2,practice,335,,1427,1427,B
