@@ -226,9 +226,8 @@ PennController.Template(
     ,
     getVar("isEarly")
         .test.is(1).success(getTooltip("earlyWarning").print().wait())
-    ,
-    getVar("isLate")
-        .test.is(1).success(getTooltip("lateWarning").print().wait())
+        .test.is(0).success(getVar("isLate")
+                                .test.is(1).success(getTooltip("lateWarning").print().wait()) )
     ,
     getVar("slowClick")
         .test.is(1).success(getTooltip("slowClickWarning").print().wait())
