@@ -65,10 +65,6 @@ PennController( "questions" ,
         .settings.after( getDropDown("mouse") )
         .print()
     ,
-    newDropDown("age", "Select")
-        .settings.add("18-24", "25-34", "35-44" ,"45-54", "55-64", "65-74", "75 or older")
-        .settings.log()
-    ,
     newText("How old are you? &nbsp;")
         .print()
     ,
@@ -93,7 +89,7 @@ PennController( "questions" ,
     newTextInput("nativeLang", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(5 0, 20)
+        .settings.size(50, 20)
         .print()
     ,
     newText("What do you think this study is about?")
