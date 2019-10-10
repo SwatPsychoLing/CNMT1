@@ -70,33 +70,30 @@ PennController( "questions" ,
         .settings.log()
     ,
     newText("How old are you? &nbsp;")
-        .settings.after( getDropDown("age") )
         .print()
     ,
-    newDropDown("nativeEng", "Select")
-        .settings.add("yes", "no")
-        .settings.log()
-    ,
-    newText("Are you a native English speaker? &nbsp;")
-        .settings.after( getDropDown("nativeEng") )
-        .print()
-    ,
-    newText("If not in English, what is your native language?")
-        .print()
-    ,
-    newTextInput("nativeLang", "")
+    newTextInput("age", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(200, 20)
+        .settings.size(50, 20)
         .print()
     ,
-    newText("At what age did you begin learning English? If you're a native speaker, enter 0.")
+    newText("At what age did you begin learning English? If you're a native speaker, please enter 0.")
         .print()
     ,        
     newTextInput("ageEng", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(200, 20)
+        .settings.size(50, 20)
+        .print()
+    ,
+    newText("If not English, what is your dominant language?")
+        .print()
+    ,
+    newTextInput("nativeLang", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(5 0, 20)
         .print()
     ,
     newText("What do you think this study is about?")
@@ -186,7 +183,7 @@ PennController.Template(
     newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to click on your selection. Please try to click quicker next time!")
         .settings.position("top center")
     ,
-    newTimer(1500) // 1500 ms to preview images
+    newTimer(2000) // 2000 ms to preview images
         .start()
         .wait()
     ,
