@@ -214,8 +214,8 @@ PennController.Template(
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
         .settings.log()
-        .wait()
         .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
+        .wait()
     ,
     getAudio("description")
         .stop()
