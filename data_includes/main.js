@@ -89,7 +89,7 @@ PennController( "questions" ,
     newTextInput("nativeLang", "")
         .settings.log()
         .settings.lines(0)
-        .settings.size(50, 20)
+        .settings.size(200, 20)
         .print()
     ,
     newText("What do you think this study is about?")
