@@ -196,7 +196,7 @@ PennController.Template(
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
-        .settings.callback( getTimer("lateStart").test.running().success(getVar("isLate").set(1)) )
+        .settings.callback( getTimer("lateStart").test.ended().success(getVar("isLate").set(1)) )
         .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
         .start()
     ,
