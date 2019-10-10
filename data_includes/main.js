@@ -1,7 +1,8 @@
 PennController.ResetPrefix(null)
 PennController.DebugOff()
-PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexitems.zip");
-PennController.Sequence( "consent" , "intro" , "preload" , "start_prac" , randomize("practice") , "end_prac" , rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
+PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexpics.zip");
+PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexaudio.zip");
+PennController.Sequence( "consent" , "intro" , "start_prac" , randomize("practice") , "end_prac" , rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
@@ -34,8 +35,6 @@ PennController( "intro" ,
         .set( getTextInput("ID") )
 )
 .log( "ID" , getVar("ID") )
-
-PennController.CheckPreloaded("experiment").label("preload")
 
 PennController( "start_prac" ,
     newHtml("practice_intro", "practice.htm")
