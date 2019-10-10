@@ -197,16 +197,18 @@ PennController.Template(
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
-        .settings.callback( getAudio("lateStart").test.running().success(getVar("isLate").set(1)) )
+        .settings.callback( getTimer("lateStart").test.running().success(getVar("isLate").set(1)) )
         .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
         .start()
     ,
     getAudio("description")
         .play()
     ,
-    getTimer("earlyStart").start()
+    getTimer("earlyStart")
+        .start()
     ,
-    getTimer("timeLimit").start()
+    getTimer("timeLimit")
+        .start()
     ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
