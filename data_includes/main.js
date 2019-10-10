@@ -189,7 +189,7 @@ PennController.Template(
     ,
     newTimer("earlyStart", variable.NPTime - 200)
     ,
-    newTimer("lateStart", variable.AudioDur + 200)
+    newTimer("lateStart", variable.AudioDur)
     ,
     newTimer("timeLimit", 5000)
     ,
