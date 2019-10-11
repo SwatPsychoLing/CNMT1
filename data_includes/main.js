@@ -189,14 +189,11 @@ PennController.Template(
     ,
     newTimer("earlyStart", variable.NPTime - 200)
     ,
-    newTimer("lateStart", variable.AudioDur)
-    ,
-    newTimer("timeLimit", 5000)
+    newTimer("timeLimit", variable.AudioDur + 2000)
     ,
     newMouseTracker("mouse")
         .settings.log()
         .settings.callback( getTimer("earlyStart").test.running().success(getVar("isEarly").set(1)) )
-        .settings.callback( getTimer("lateStart").test.ended().success(getVar("isLate").set(1)) )
         .start()
     ,
     getAudio("description")
@@ -225,8 +222,6 @@ PennController.Template(
     ,
     getVar("isEarly")
         .test.is(1).success(getTooltip("earlyWarning").print().wait())
-        .test.is(0).success(getVar("isLate")
-                                .test.is(1).success(getTooltip("lateWarning").print().wait()) )
     ,
     getVar("slowClick")
         .test.is(1).success(getTooltip("slowClickWarning").print().wait())
@@ -236,6 +231,5 @@ PennController.Template(
   .log( "Label" , variable.Label )
   .log( "Target"   , variable.TargetLocation  )
   .log( "EarlyStartMessage" , getVar("isEarly") )
-  .log( "LateStartMessage" , getVar("isLate") )
-  .log( "TooSlowClickMessage" , getVar("slowClick") )
+  .log( "TooSlowMessage" , getVar("slowClick") )
 )
