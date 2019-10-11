@@ -168,14 +168,9 @@ PennController.Template(
     newTooltip("earlyWarning", "STARTED TOO EARLY. You moved your mouse from the Go button before it was possible to guess the correct option. Please don't move your mouse until you're about to click.")
         .settings.position("top center")
     ,
-    newVar("isLate", 0)
-    ,
-    newTooltip("lateWarning", "STARTED TOO LATE. You waited a bit too long to start moving your mouse. Try to start moving your mouse before the audio is completely over.")
-        .settings.position("top center")
-    ,
     newVar("slowClick", 0)
     ,
-    newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to click on your selection. Please try to click quicker next time!")
+    newTooltip("slowClickWarning", "CLICKED TOO LATE. You took too long to click on your selection. Please try to click faster next time!")
         .settings.position("top center")
     ,
     newTimer(2000) // 2000 ms to preview images
@@ -189,7 +184,7 @@ PennController.Template(
     ,
     newTimer("earlyStart", variable.NPTime - 200)
     ,
-    newTimer("timeLimit", variable.AudioDur + 2000)
+    newTimer("timeLimit", variable.AudioDur)
     ,
     newMouseTracker("mouse")
         .settings.log()
@@ -207,8 +202,8 @@ PennController.Template(
     ,
     newSelector()
         .settings.add( getImage("1") , getImage("2") , getImage("3") , getImage("4"))
-        .settings.log()
         .settings.callback( getTimer("timeLimit").test.ended().success(getVar("slowClick").set(1)) )
+        .settings.log()
         .wait()
     ,
     getAudio("description")
