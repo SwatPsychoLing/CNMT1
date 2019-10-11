@@ -182,9 +182,9 @@ PennController.Template(
         .wait()
         .remove()
     ,
-    newTimer("earlyStart", variable.NPTime - 200)
+    newTimer("earlyStart", (parseInt(variable.NPTime) - 200) )
     ,
-    newTimer("timeLimit", variable.AudioDur + 1000)
+    newTimer("timeLimit", (parseInt(variable.AudioDur) + 1000) )
     ,
     newMouseTracker("mouse")
         .settings.log()
