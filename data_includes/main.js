@@ -202,9 +202,6 @@ PennController.Template(
     getTimer("earlyStart")
         .start()
     ,
-    getTimer("lateStart")
-        .start()
-    ,
     getTimer("timeLimit")
         .start()
     ,
