@@ -64,6 +64,15 @@ PennController( "questions" ,
         .settings.after( getDropDown("mouse") )
         .print()
     ,
+    newText("Which browser (e.g. Google Chrome, Firefox) did you use to complete this experiment? &nbsp;")
+        .print()
+    ,
+    newTextInput("browser", "")
+        .settings.log()
+        .settings.lines(0)
+        .settings.size(50, 20)
+        .print()
+    ,
     newText("How old are you? &nbsp;")
         .print()
     ,
