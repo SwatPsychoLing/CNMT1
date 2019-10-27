@@ -216,7 +216,7 @@ PennController.Template(
         .wait()
     ,
     getAudio("description")
-       .wait()
+       .wait("first")
     ,
     getMouseTracker("mouse")
         .stop()
