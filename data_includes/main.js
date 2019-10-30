@@ -2,7 +2,7 @@ PennController.ResetPrefix(null)
 // PennController.DebugOff()
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexpics.zip");
 PennController.PreloadZip("https://continf.s3.amazonaws.com/ibexaudio.zip");
-PennController.Sequence( "consent" , "intro" , "start_prac" , randomize("practice") , "end_prac" , rshuffle("critical", "filler", "contrast filler", "critical competitor") , "questions" , "send" , "final" )
+PennController.Sequence( "consent" , "intro" , "start_prac" , randomize("practice") , "end_prac" , rshuffle("critical with contrast", "critical no contrast", "filler", "contrast filler") , "questions" , "send" , "final" )
 var showProgressBar = false;
 
 PennController( "consent" ,
