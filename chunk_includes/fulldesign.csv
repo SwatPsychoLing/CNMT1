@@ -12,13 +12,13 @@ bag.png,shortmarker.png,shortfork.png,seal.png,shortmarker.mp3,2,critical no con
 globe.png,shortcandle.png,shortrocket.png,pancakes.png,shortrocket.mp3,3,critical no contrast,A,755,1278,755,1970
 shorthammer.png,briefcase.png,longhockeystick.png,shorthockeystick.png,shorthockeystick.mp3,4,critical with contrast,A,942,1407,942,2317
 fatpencil.png,bagel.png,curtains.png,fatcat.png,fatpencil.mp3,1,critical no contrast,A,1050,1769,1050,2316
-skinnybacon.png,fatbacon.png,fatstrawberry.png,yoyo.png,fatbacon.mp3,2,critical with contrast,A,918,1560,918,2064
+longwig.png,shortwig.png,shortplunger.png,zebra.png,shortwig.mp3,2,critical with contrast,A,831,1376,831,1896
 cupcake.png,skinnyman.png,skinnycandycane.png,phone.png,skinnycandycane.mp3,3,critical no contrast,A,1043,1631,1043,2431
 skinnywoman.png,jellyfish.png,flower.png,skinnyknife.png,skinnyknife.mp3,4,critical no contrast,A,1073,1636,1073,2265
 skinnytie.png,fattie.png,sink.png,skinnydog.png,skinnytie.mp3,1,critical with contrast,A,876,1582,876,2046
 narrowcolumn.png,widecolumn.png,widedoor.png,olives.png,widecolumn.mp3,2,critical with contrast,A,921,1453,921,2012
 balloon.png,thinstick.png,thinbandaid.png,thickbandaid.png,thinbandaid.mp3,3,critical with contrast,A,1033,1669,1033,2315
-thinchair.png,jacket.png,banana.png,thinbottle.png,thinbottle.mp3,4,critical no contrast,A,1027,1716,1027,2035
+kite.png,pinecone.png,yoyo.png,smallsuitcase.png,smallsuitcase.mp3,4,critical no contrast,A,856,1459,856,2424
 thinruler.png,thickruler.png,pear.png,thinarrow.png,thinruler.mp3,1,critical with contrast,A,967,1377,967,1967
 tallbeer.png,shortbeer.png,shorttable.png,yarn.png,shortbeer.mp3,2,critical with contrast,A,908,1671,908,2090
 lock.png,shortladder.png,shortjar.png,beetle.png,shortjar.mp3,3,critical no contrast,A,970,1671,970,2203
@@ -34,8 +34,8 @@ smallclipboard.png,easel.png,trumpet.png,smallspider.png,smallspider.mp3,4,criti
 smalldesk.png,bigdesk.png,caterpillar.png,smalleraser.png,smalldesk.mp3,1,critical with contrast,A,1081,1766,1081,1590
 bigtrophy.png,smalltrophy.png,smallpinwheel.png,grapes.png,smalltrophy.mp3,2,critical with contrast,A,897,1574,897,2180
 avocado.png,thickbook.png,thickpaintbrush.png,dartboard.png,thickpaintbrush.mp3,3,critical no contrast,A,871,1480,871,2282
-thickrope.png,fan.png,thinburrito.png,thickburrito.png,thickburrito.mp3,4,critical with contrast,A,1011,1635,1011,2229
-thickmustache.png,thinmustache.png,xylophone.png,thickpillow.png,thickmustache.mp3,1,critical with contrast,A,924,1413,924,2325
+thickeyebrows.png,fan.png,thinburrito.png,thickburrito.png,thickburrito.mp3,4,critical with contrast,A,1011,1635,1011,2229
+thickmustache.png,thinmustache.png,xylophone.png,thicktire.png,thickmustache.mp3,1,critical with contrast,A,924,1413,924,2325
 watermelon.png,tallflamingo.png,tallhat.png,domino.png,tallflamingo.mp3,2,critical no contrast,A,930,1343,930,2101
 crayon.png,tallman.png,tallstool.png,shortstool.png,tallstool.mp3,3,critical with contrast,A,940,1458,940,2017
 tallgiraffe.png,pretzel.png,card.png,talllamp.png,talllamp.mp3,4,critical no contrast,A,1042,1597,1042,2350
@@ -47,14 +47,14 @@ toaster.png,pot.png,shortcorn.png,longcorn.png,toaster.mp3,1,contrast filler,A,,
 deodorant.png,salad.png,tallspeaker.png,shortspeaker.png,salad.mp3,2,contrast filler,A,,964,964,1684
 widebush.png,narrowbush.png,rooster.png,popsicle.png,rooster.mp3,3,contrast filler,A,,919,919,1535
 bigbeehive.png,smallbeehive.png,icecube.png,calculator.png,calculator.mp3,4,contrast filler,A,,943,943,1746
-acorn.png,remote.png,thicktire.png,thintire.png,acorn.mp3,1,contrast filler,A,,1045,1045,1750
+acorn.png,remote.png,thickrollingpin.png,thinrollingpin.png,acorn.mp3,1,contrast filler,A,,1045,1045,1750
 snowglobe.png,icecream.png,bigfrog.png,smallfrog.png,icecream.mp3,2,contrast filler,A,,1038,1038,1693
 fatpickle.png,skinnypickle.png,goggles.png,hook.png,goggles.mp3,3,contrast filler,A,,1005,1005,1805
 shortgiftbag.png,tallgiftbag.png,soap.png,taco.png,taco.mp3,4,contrast filler,A,,1021,1021,1598
 rattle.png,tongs.png,thinsausage.png,thicksausage.png,rattle.mp3,1,contrast filler,A,,1035,1035,1601
 charger.png,dragon.png,bigcake.png,smallcake.png,dragon.mp3,2,contrast filler,A,,1014,1014,1659
 fatrug.png,skinnyrug.png,violin.png,safe.png,violin.mp3,3,contrast filler,A,,930,930,1664
-thickeyebrows.png,thineyebrows.png,train.png,magnifyingglass.png,magnifyingglass.mp3,4,contrast filler,A,,940,940,2435
+thickspoon.png,thinspoon.png,train.png,magnifyingglass.png,magnifyingglass.mp3,4,contrast filler,A,,940,940,2435
 surfboard.png,laptop.png,fatcomb.png,skinnycomb.png,surfboard.mp3,1,contrast filler,A,,924,924,1858
 pacifier.png,handcuffs.png,smalldiamond.png,bigdiamond.png,handcuffs.mp3,2,contrast filler,A,,1012,1012,1944
 shortdumbbell.png,longdumbbell.png,hanger.png,kettle.png,hanger.mp3,3,contrast filler,A,,978,978,1640
@@ -137,13 +137,13 @@ longmarker.png,shortmarker.png,shortfork.png,seal.png,shortmarker.mp3,2,critical
 globe.png,shortcandle.png,shortrocket.png,longrocket.png,shortrocket.mp3,3,critical with contrast,B,755,1278,755,1970
 shorthammer.png,briefcase.png,tennisball.png,shorthockeystick.png,shorthockeystick.mp3,4,critical no contrast,B,942,1407,942,2317
 fatpencil.png,skinnypencil.png,curtains.png,fatcat.png,fatpencil.mp3,1,critical with contrast,B,1050,1769,1050,2316
-firehydrant.png,fatbacon.png,fatstrawberry.png,yoyo.png,fatbacon.mp3,2,critical no contrast,B,918,1560,918,2064
+firehydrant.png,shortwig.png,shortplunger.png,zebra.png,shortwig.mp3,2,critical no contrast,B,831,1376,831,1896
 cupcake.png,skinnyman.png,skinnycandycane.png,fatcandycane.png,skinnycandycane.mp3,3,critical with contrast,B,1043,1631,1043,2431
 skinnywoman.png,jellyfish.png,fatknife.png,skinnyknife.png,skinnyknife.mp3,4,critical with contrast,B,1073,1636,1073,2265
 skinnytie.png,bee.png,sink.png,skinnydog.png,skinnytie.mp3,1,critical no contrast,B,876,1582,876,2046
 guitar.png,widecolumn.png,widedoor.png,olives.png,widecolumn.mp3,2,critical no contrast,B,921,1453,921,2012
 balloon.png,thinstick.png,thinbandaid.png,octopus.png,thinbandaid.mp3,3,critical no contrast,B,1033,1669,1033,2315
-thinchair.png,jacket.png,thickbottle.png,thinbottle.png,thinbottle.mp3,4,critical with contrast,B,1027,1716,1027,2035
+kite.png,pinecone.png,bigsuitcase.png,smallsuitcase.png,smallsuitcase.mp3,4,critical with contrast,B,856,1459,856,2424
 thinruler.png,hourglass.png,pear.png,thinarrow.png,thinruler.mp3,1,critical no contrast,B,967,1377,967,1967
 barn.png,shortbeer.png,shorttable.png,yarn.png,shortbeer.mp3,2,critical no contrast,B,908,1671,908,2090
 lock.png,shortladder.png,shortjar.png,talljar.png,shortjar.mp3,3,critical with contrast,B,970,1671,970,2203
@@ -159,8 +159,8 @@ smallclipboard.png,easel.png,bigspider.png,smallspider.png,smallspider.mp3,4,cri
 smalldesk.png,flipflops.png,caterpillar.png,smalleraser.png,smalldesk.mp3,1,critical no contrast,B,1081,1766,1081,1590
 rock.png,smalltrophy.png,smallpinwheel.png,grapes.png,smalltrophy.mp3,2,critical no contrast,B,897,1574,897,2180
 avocado.png,thickbook.png,thickpaintbrush.png,thinpaintbrush.png,thickpaintbrush.mp3,3,critical with contrast,B,871,1480,871,2282
-thickrope.png,fan.png,onion.png,thickburrito.png,thickburrito.mp3,4,critical no contrast,B,1011,1635,1011,2229
-thickmustache.png,bowlingball.png,xylophone.png,thickpillow.png,thickmustache.mp3,1,critical no contrast,B,924,1413,924,2325
+thickeyebrows.png,fan.png,onion.png,thickburrito.png,thickburrito.mp3,4,critical no contrast,B,1011,1635,1011,2229
+thickmustache.png,bowlingball.png,xylophone.png,thicktire.png,thickmustache.mp3,1,critical no contrast,B,924,1413,924,2325
 shortflamingo.png,tallflamingo.png,tallhat.png,domino.png,tallflamingo.mp3,2,critical with contrast,B,930,1343,930,2101
 crayon.png,tallman.png,tallstool.png,shirt.png,tallstool.mp3,3,critical no contrast,B,940,1458,940,2017
 tallgiraffe.png,pretzel.png,shortlamp.png,talllamp.png,talllamp.mp3,4,critical with contrast,B,1042,1597,1042,2350
@@ -172,14 +172,14 @@ toaster.png,pot.png,shortcorn.png,longcorn.png,toaster.mp3,1,contrast filler,B,,
 deodorant.png,salad.png,tallspeaker.png,shortspeaker.png,salad.mp3,2,contrast filler,B,,964,964,1684
 widebush.png,narrowbush.png,rooster.png,popsicle.png,rooster.mp3,3,contrast filler,B,,919,919,1535
 bigbeehive.png,smallbeehive.png,icecube.png,calculator.png,calculator.mp3,4,contrast filler,B,,943,943,1746
-acorn.png,remote.png,thicktire.png,thintire.png,acorn.mp3,1,contrast filler,B,,1045,1045,1750
+acorn.png,remote.png,thickrollingpin.png,thinrollingpin.png,acorn.mp3,1,contrast filler,B,,1045,1045,1750
 snowglobe.png,icecream.png,bigfrog.png,smallfrog.png,icecream.mp3,2,contrast filler,B,,1038,1038,1693
 fatpickle.png,skinnypickle.png,goggles.png,hook.png,goggles.mp3,3,contrast filler,B,,1005,1005,1805
 shortgiftbag.png,tallgiftbag.png,soap.png,taco.png,taco.mp3,4,contrast filler,B,,1021,1021,1598
 rattle.png,tongs.png,thinsausage.png,thicksausage.png,rattle.mp3,1,contrast filler,B,,1035,1035,1601
 charger.png,dragon.png,bigcake.png,smallcake.png,dragon.mp3,2,contrast filler,B,,1014,1014,1659
 fatrug.png,skinnyrug.png,violin.png,safe.png,violin.mp3,3,contrast filler,B,,930,930,1664
-thickeyebrows.png,thineyebrows.png,train.png,magnifyingglass.png,magnifyingglass.mp3,4,contrast filler,B,,940,940,2435
+thickspoon.png,thinspoon.png,train.png,magnifyingglass.png,magnifyingglass.mp3,4,contrast filler,B,,940,940,2435
 surfboard.png,laptop.png,fatcomb.png,skinnycomb.png,surfboard.mp3,1,contrast filler,B,,924,924,1858
 pacifier.png,handcuffs.png,smalldiamond.png,bigdiamond.png,handcuffs.mp3,2,contrast filler,B,,1012,1012,1944
 shortdumbbell.png,longdumbbell.png,hanger.png,kettle.png,hanger.mp3,3,contrast filler,B,,978,978,1640
@@ -246,6 +246,6 @@ beet.png,indexcards.png,crib.png,paint.png,crib.mp3,3,filler,B,,1087,1087,1714
 crepe.png,scale.png,cheetah.png,pajamas.png,pajamas.mp3,4,filler,B,,1047,1047,1935
 starfish.png,car.png,sponge.png,coffeebean.png,starfish.mp3,1,practice,B,,988,988,2044
 milkshake.png,tent.png,belt.png,stethoscope.png,tent.mp3,2,practice,B,,1162,1162,1715
-toilet.png,smallhand.png,smalllion.png,biglion.png,smalllion.mp3,3,practice,B,,1593,961,2160
+toilet.png,smallhand.png,smalllion.png,biglion.png,smalllion.mp3,3,practice,B,961,1593,961,2160
 tulip.png,raccoon.png,gps.png,church.png,church.mp3,4,practice,B,,1092,1092,1847
 chocolatebar.png,mouse.png,longstraw.png,shortstraw.png,chocolatebar.mp3,1,practice,B,,1045,1045,1932
