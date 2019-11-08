@@ -20,7 +20,7 @@ narrowcolumn.png,widecolumn.png,widedoor.png,olives.png,widecolumn.mp3,2,critica
 balloon.png,thinstick.png,thinbandaid.png,thickbandaid.png,thinbandaid.mp3,3,critical with contrast,A,1033,1669,1033,2315
 kite.png,pinecone.png,yoyo.png,smallsuitcase.png,smallsuitcase.mp3,4,critical no contrast,A,856,1459,856,2424
 thinruler.png,thickruler.png,pear.png,thinarrow.png,thinruler.mp3,1,critical with contrast,A,967,1377,967,1967
-tallbeer.png,shortbeer.png,shorttable.png,yarn.png,shortbeer.mp3,2,critical with contrast,A,908,1671,908,2090
+tallbeer.png,shortbeer.png,shorttable.png,passport.png,shortbeer.mp3,2,critical with contrast,A,908,1671,908,2090
 lock.png,shortladder.png,shortjar.png,beetle.png,shortjar.mp3,3,critical no contrast,A,970,1671,970,2203
 bigburger.png,mittens.png,microphone.png,bigbowl.png,bigbowl.mp3,4,critical no contrast,A,1077,1455,1077,1998
 bigpotato.png,fireextinguisher.png,tissues.png,bigtruck.png,bigpotato.mp3,1,critical no contrast,A,940,1352,940,1993
@@ -145,7 +145,7 @@ guitar.png,widecolumn.png,widedoor.png,olives.png,widecolumn.mp3,2,critical no c
 balloon.png,thinstick.png,thinbandaid.png,octopus.png,thinbandaid.mp3,3,critical no contrast,B,1033,1669,1033,2315
 kite.png,pinecone.png,bigsuitcase.png,smallsuitcase.png,smallsuitcase.mp3,4,critical with contrast,B,856,1459,856,2424
 thinruler.png,hourglass.png,pear.png,thinarrow.png,thinruler.mp3,1,critical no contrast,B,967,1377,967,1967
-barn.png,shortbeer.png,shorttable.png,yarn.png,shortbeer.mp3,2,critical no contrast,B,908,1671,908,2090
+barn.png,shortbeer.png,shorttable.png,passport.png,shortbeer.mp3,2,critical no contrast,B,908,1671,908,2090
 lock.png,shortladder.png,shortjar.png,talljar.png,shortjar.mp3,3,critical with contrast,B,970,1671,970,2203
 bigburger.png,mittens.png,smallbowl.png,bigbowl.png,bigbowl.mp3,4,critical with contrast,B,1077,1455,1077,1998
 bigpotato.png,smallpotato.png,tissues.png,bigtruck.png,bigpotato.mp3,1,critical with contrast,B,940,1352,940,1993
