@@ -141,10 +141,10 @@ PennController( "final" ,
     newText("<p>Thank you for your participation!</p>")
         .print()
     ,
-    newText("<p><a href='https://app.prolific.co/submissions/complete?cc=8741FA49'>Click here to validate your participation.</a></p>")
+    newText("<p><a href='https://app.prolific.co/submissions/complete?cc=74386B6C'>Click here to validate your participation.</a></p>")
         .print()
     ,
-    newText("<p><a href='https://app.prolific.co/submissions/complete?cc=8741FA49'>https://app.prolific.co/submissions/complete?cc=8741FA49</a></p>")
+    newText("<p><a href='https://app.prolific.co/submissions/complete?cc=74386B6C'>https://app.prolific.co/submissions/complete?cc=74386B6C</a></p>")
         .print()
     ,
     newButton("void")
